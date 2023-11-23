@@ -2,7 +2,7 @@
 
 export class Tag {
     static readonly ANGULAR = new Tag('Angular', 'crimson'); // defined a tag called Angular, static readonly acts as enums
-    static readonly TYPESCRIPT = new Tag('Typescript', 'teal'); 
+    static readonly TYPESCRIPT = new Tag('Typescript', 'crimson'); 
     static readonly PYTHON = new Tag('Python', 'royal blue'); 
     static readonly JAVA = new Tag('Java', 'gray'); 
     static readonly NODEJS = new Tag('Node.JS', 'brown'); 
