@@ -1,18 +1,18 @@
 // the color coordinated languages on the portfolio cards
 
 export class Tag {
-    static readonly ANGULAR = new Tag('Angular', 'crimson'); // defined a tag called Angular, static readonly acts as enums
-    static readonly TYPESCRIPT = new Tag('Typescript', 'crimson'); 
+    static readonly ANGULAR = new Tag('Angular', 'blue'); // defined a tag called Angular, static readonly acts as enums
+    static readonly TYPESCRIPT = new Tag('Typescript', 'blue'); 
     static readonly PYTHON = new Tag('Python', 'royal blue'); 
-    static readonly JAVA = new Tag('Java', 'gray'); 
-    static readonly NODEJS = new Tag('Node.JS', 'brown'); 
-    static readonly JAVASCRIPT = new Tag('Javascript', 'darkgreen'); 
-    static readonly UIPATH = new Tag('UiPath', 'firebrick'); 
-    static readonly HTML = new Tag('HTML/CSS', 'orangered');
-    static readonly VBNET = new Tag('Vb.Net', 'green');
-    static readonly FLASK = new Tag('Flask', 'purple');
-    static readonly EXPRESSJS = new Tag('Express.JS', 'indigo');
-    static readonly SPRINGBOOT = new Tag('SpringBoot', 'navy')
+    static readonly JAVA = new Tag('Java', 'blue'); 
+    static readonly NODEJS = new Tag('Node.JS', 'blue'); 
+    static readonly JAVASCRIPT = new Tag('Javascript', 'blue'); 
+    static readonly UIPATH = new Tag('UiPath', 'blue'); 
+    static readonly HTML = new Tag('HTML/CSS', 'blue');
+    static readonly VBNET = new Tag('Vb.Net', 'blue');
+    static readonly FLASK = new Tag('Flask', 'blue');
+    static readonly EXPRESSJS = new Tag('Express.JS', 'blue');
+    static readonly SPRINGBOOT = new Tag('SpringBoot', 'blue')
 
 
     private constructor(private readonly key: string, public readonly color: string) {
