@@ -17,6 +17,7 @@ export class PortfolioComponent implements OnInit {
   filtering: boolean = false;
   typescript: boolean = false;
   angular: boolean = false;
+  react: boolean = false;
   flask: boolean = false;
   html: boolean = false;
   javascript: boolean = false;
@@ -43,6 +44,9 @@ export class PortfolioComponent implements OnInit {
     }
     if (this.angular) {
       filterTags.push(Tag.ANGULAR); 
+    }
+    if (this.react) {
+      filterTags.push(Tag.REACT); 
     }
     if (this.flask) {
       filterTags.push(Tag.FLASK);
