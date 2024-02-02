@@ -5,16 +5,20 @@
     font-size: 14px;
     line-height: 30px;
     border-radius: 25px;
-    background-color: blue;
-    color: white;
+    background-color: yellow;
+    color: black;
 }
 
 .card-body {
-    background-image: url("/assets/BackgroundImage/galaxy.jpeg");
+    background-color: black;
     color: white;
 }
 
 .card-footer {
     background-image: url("/assets/BackgroundImage/galaxy.jpeg");
     
+}
+
+.card-title {
+    color: #0ef ;
 }

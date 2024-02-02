@@ -1,4 +1,32 @@
+h2 {
+    color: #0ef ;
+}
+
+
 .container {
     background-color: black;
     color: white;
+    border: #0ef;
+
 }
+
+
+.col-lg.about-me {
+    border: 1px solid #0ef; /* Set the border color to #0ef (blue) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    padding: 15px; /* Optional: Add some padding for better visual appearance */
+    margin-right: 15px;
+}
+
+
+.col-lg.featured-project {
+    border: 1px solid #0ef; /* Set the border color to #0ef (blue) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    padding: 15px; /* Optional: Add some padding for better visual appearance */
+    margin-left: 15px;
+}
+
+.text-left {
+    color: yellow;
+}
+

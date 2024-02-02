@@ -1,1 +1,67 @@
-<p>contact works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+
+    <!-- Add the script tag for smtp.js here -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    
+<section class="contact">
+    <h2>Contact Me!</h2>
+
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off"
+                   [(ngModel)]="fullname" name="fullname" required> 
+                <div class="error-txt" *ngIf="contactForm.controls['fullname']?.invalid">Full Name can't be blank</div>
+            </div>
+
+
+            <div class="input-field field">
+                <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off"
+                [(ngModel)]="email" name="email" required> 
+                <div class="error-txt" *ngIf="contactForm.controls['email']?.invalid">Email can't be blank</div>>
+            </div>
+        </div> 
+
+        <div class="input-box">   
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off"
+                [(ngModel)]="phone" name="phone" required> 
+                <div class="error-txt" *ngIf="contactForm.controls['phone']?.invalid">Phone Number can't be blank</div>>
+\            </div>
+
+
+            <div class="input-field field">
+                <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off"
+                [(ngModel)]="subject" name="subject" required> 
+                <div class="error-txt" *ngIf="contactForm.controls['subject']?.invalid">Subject can't be blank</div>>  
+            </div>
+        </div>
+
+
+
+        <div class="textarea-field field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off"
+            [(ngModel)]="message" name="message" required> 
+            <div class="error-txt" *ngIf="contactForm.controls['message']?.invalid">Message can't be blank</div>></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="contact.component.ts"></script>
+
+</body>
+</html>
