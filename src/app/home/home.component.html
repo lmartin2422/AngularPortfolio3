@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="row">
+
+        <!--About Me-->
+        <div class="col-lg about-me">
+            <div class="text-center">
+                <h2><b>About Me</b></h2>
+                &nbsp;
+
+                <!--SCHOOL LOGOS-->
+                <!--
+                <div> 
+                    <a href="https://bpi.edu" target="_blank">
+                        <img src="../../assets/poly.png" alt="profile picture" width="256" height="256" class="rounded-circle">
+                    </a>
+                </div>
+                &nbsp;
+
+                <div> 
+                    <a href="https://www.morgan.edu" target="_blank"> 
+                        <img src="../../assets/morgan.jpeg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                    </a>
+                </div>
+                &nbsp;
+
+                <div> 
+                    <a href="https://www.youtube.com/watch?v=qBqy_LV3vcQ" target="_blank"> 
+                        <img src="../../assets/umgc.png" alt="profile picture" width="256" height="256" class="rounded-circle">
+                    </a>
+                </div>
+                &nbsp;
+                 -->
+
+
+                <!--QUICK FACTS-->
+                <!-- 
+                <h6 class="text-left"><b>Education:</b></h6>
+                
+
+                <h6>B.S. Degree in Software Development & Security</h6>
+                <h6> B.S. Degree in Marketing</h6>
+                <h6>Certification in RPA Development - 2024</h6>
+                <h6>Certification in AI Engineering - 2024</h6>
+                    
+                <p>
+                    &nbsp;
+                </p>
+                -->
+                <!--Technologies-->
+                <h6 class="text-left"><b>Technologies: </b></h6>
+                    
+                <h6><b>Frontend: </b>Angular, React, HTML/CSS, Flask, Figma, Springboot</h6> 
+                &nbsp;
+                    
+                <h6> <b>Backend: </b>Javascript/Typescript, Python, Java, UiPath, Rest API, NodeJs, ExpressJs, Linux, Bash, Command Lines</h6> 
+                &nbsp; 
+                <h6> <b>Database:  </b>SQL, Mongo DB, Postgres SQL, RDMS, MySQL, Oracle, Microsoft SQL Server</h6> 
+                &nbsp;
+                <h6> <b>Cloud Computing, Source & Version Control, and Agile Methodologies: </b>Microsoft Azure, Azure Devops, Amazon Web Services AWS, Git, Github</h6> 
+                &nbsp;  
+                <h6> <b>Security: </b>Black Box White Box Testing, Junit Testing, Penetration Testing, Risk Detection, Vulnerability Mitigation </h6> 
+                &nbsp;  
+                <h6> <b>Areas of expertise: </b>Single Page Application SPA, Robotic Process Automation RPA, Data Extraction & Web Scraping, Frontend, Backend, Server Side, Web Design</h6> 
+
+            </div>
+        </div>
+        <!--Featured Project-->
+        <div class="col-lg featured-project">
+            <div class="text-center">
+                <h2 ><b>Featured Project </b></h2>
+                &nbsp;
+                <h4 class="text-left">{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src= "../../assets/MovieTrailerReview/review_screenshot.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/trailer.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/home_carousel_movies.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/dbDataInBrowser.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/postmanGetRequest.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                </div>
+            </carousel>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <p></p>
+            <h6 class="text-left"><b>Project Description:</b></h6>
+
+            <h6 class="mt-2">{{featuredProject.summary}}</h6>
+            &nbsp;
+            <h6>Visit the portfolio section to learn more projects!</h6>
+        </div>
+
+    </div>
+</div>
