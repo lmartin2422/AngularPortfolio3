@@ -16,6 +16,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
     padding: 15px; /* Optional: Add some padding for better visual appearance */
     margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 
@@ -24,6 +25,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
     padding: 15px; /* Optional: Add some padding for better visual appearance */
     margin-left: 15px;
+    
 }
 
 .text-left {
