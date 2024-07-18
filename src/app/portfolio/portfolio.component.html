@@ -91,6 +91,15 @@
                                     <input 
                                         type="checkbox" 
                                         class="form-check-input position-static me-2"
+                                        [(ngModel)]="cyber"
+                                        (change)="Filter()" 
+                                        name="Cyber">
+                                    <label class="form-check-label small">Cyber</label>
+                                </div>
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
                                         [(ngModel)]="angular"
                                         (change)="Filter()" 
                                         name="Angular">
