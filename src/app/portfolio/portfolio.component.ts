@@ -28,6 +28,7 @@ export class PortfolioComponent implements OnInit {
   expressjs: boolean = false;
   nodejs: boolean = false;
   python: boolean = false;
+  cyber: boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectsService) { // whenever this component is loaded, title below shows
     this.titleService.setTitle("Leonard Martin - Portfolio");
@@ -39,6 +40,9 @@ export class PortfolioComponent implements OnInit {
   Filter() {  // for the options in the filter
     let filterTags: Tag[] =[];
 
+    if (this.cyber) {
+      filterTags.push(Tag.CYBER);
+    }
     if (this.typescript) {
       filterTags.push(Tag.TYPESCRIPT);
     }
@@ -81,7 +85,7 @@ export class PortfolioComponent implements OnInit {
 
     // RESET LOGIC
     if (this.python || this.angular || this.expressjs || this.flask || this.html || this.java || this.javascript || this.nodejs ||
-      this.springboot || this.typescript || this.uipath || this.vbnet) { 
+      this.springboot || this.typescript || this.uipath || this.vbnet || this.cyber) { 
         this.filtering = true;
     }
 
@@ -95,6 +99,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   ResetFilters() {
+    this.cyber = false;
     this.angular = false;
     this.expressjs = false;
     this.flask = false;
