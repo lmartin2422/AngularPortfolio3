@@ -13,7 +13,9 @@ export class Tag {
     static readonly FLASK = new Tag('Flask', 'yellow');
     static readonly EXPRESSJS = new Tag('Express.JS', 'yellow');
     static readonly REACT = new Tag('React', 'yellow');
-    static readonly SPRINGBOOT = new Tag('SpringBoot', 'yellow')
+    static readonly SPRINGBOOT = new Tag('SpringBoot', 'yellow');
+    static readonly CYBER = new Tag('Cyber', 'orange');
+
 
 
 
