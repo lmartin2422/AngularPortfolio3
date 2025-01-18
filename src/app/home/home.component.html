@@ -1,8 +1,8 @@
 <div class="container">
-    <div class="row justify-content-between">
+    <div class="row">
 
         <!--About Me-->
-        <div class="col-lg-5 about-me mb-4">
+        <div class="col-lg about-me">
             <div class="text-center">
                 <h2><b>About Me</b></h2>
                 &nbsp;
@@ -12,34 +12,60 @@
                 <h6><b>Frontend: </b>Angular, React, HTML/CSS, Flask, Figma, Springboot</h6> 
                 &nbsp;
                     
-                <h6><b>Backend: </b>Javascript/Typescript, Python, Java, UiPath, Rest API, NodeJs, ExpressJs, Linux, Bash, Command Lines</h6> 
+                <h6> <b>Backend: </b>Javascript/Typescript, Python, Java, UiPath, Rest API, NodeJs, ExpressJs, Linux, Bash, Command Lines</h6> 
                 &nbsp; 
-                <h6><b>Database: </b>SQL, Mongo DB, Postgres SQL, RDMS, MySQL, Oracle, Microsoft SQL Server</h6> 
+                <h6> <b>Database:  </b>SQL, Mongo DB, Postgres SQL, RDMS, MySQL, Oracle, Microsoft SQL Server</h6> 
                 &nbsp;
-                <h6><b>Cloud Computing, Source & Version Control, and Agile Methodologies: </b>Microsoft Azure, Azure Devops, Amazon Web Services AWS, Git, Github</h6> 
+                <h6> <b>Cloud Computing, Source & Version Control, and Agile Methodologies: </b>Microsoft Azure, Azure Devops, Amazon Web Services AWS, Git, Github</h6> 
                 &nbsp;  
-                <h6><b>Security: </b>Black Box White Box Testing, Junit Testing, Penetration Testing, Risk Detection, Vulnerability Mitigation </h6> 
+                <h6> <b>Security: </b>Black Box White Box Testing, Junit Testing, Penetration Testing, Risk Detection, Vulnerability Mitigation </h6> 
                 &nbsp;  
-                <h6><b>Areas of expertise: </b>Single Page Application SPA, Robotic Process Automation RPA, Data Extraction & Web Scraping, Frontend, Backend, Server Side, Web Design</h6> 
+                <h6> <b>Areas of expertise: </b>Single Page Application SPA, Robotic Process Automation RPA, Data Extraction & Web Scraping, Frontend, Backend, Server Side, Web Design</h6> 
+                &nbsp;
+
+                <!--Certifications-->
+                <h6 class="text-left"><b>Certifications: </b></h6>
+                    
+                <h6>Harvard University: Intro to A.I. using Python </h6> 
+                    
+                <h6>Comptia Security+ </h6> 
+
+                <h6> E-Council: Ethical Hacking Essentials</h6> 
+                &nbsp;
+
+                 <!--Education-->
+                <h6 class="text-left"><b>Education: </b></h6>
+                    
+                <h6>University of Maryland, BS in Software Development & Security</h6> 
+
+                <h6>Morgan State University, BS in Marketing </h6> 
+                &nbsp;
+
+                <!--Hobbies/Interest-->
+                <h6 class="text-left"><b>Hobbies/Interest: </b></h6>
+
+                <h6>Movies, Sports, Fashion, Tech News, and Places with a Beach</h6> 
+
+                &nbsp;
+                
 
             </div>
         </div>
-
         <!--Featured Project-->
-        <div class="col-lg-6 featured-project mb-4">
+        <div class="col-lg featured-project">
             <div class="text-center">
-                <h2><b>Featured Project</b></h2>
+                <h2 ><b>Featured Project </b></h2>
                 &nbsp;
                 <h4 class="text-left">{{featuredProject.name}}</h4>
             </div>
 
             <carousel>
                 <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src="../../assets/MovieTrailerReview/review_screenshot.png" alt="slide" style="display: block; width: 100%;"></slide>
-                    <slide><img src="../../assets/MovieTrailerReview/trailer.png" alt="slide" style="display: block; width: 100%;"></slide>
-                    <slide><img src="../../assets/MovieTrailerReview/home_carousel_movies.png" alt="slide" style="display: block; width: 100%;"></slide>
-                    <slide><img src="../../assets/MovieTrailerReview/dbDataInBrowser.png" alt="slide" style="display: block; width: 100%;"></slide>
-                    <slide><img src="../../assets/MovieTrailerReview/postmanGetRequest.png" alt="slide" style="display: block; width: 100%;"></slide>
+                    <slide><img src= "../../assets/MovieTrailerReview/review_screenshot.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/trailer.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/home_carousel_movies.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/dbDataInBrowser.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                    <slide><img src= "../../assets/MovieTrailerReview/postmanGetRequest.png" alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
                 </div>
             </carousel>
             &nbsp;
@@ -55,3 +81,4 @@
 
     </div>
 </div>
+
