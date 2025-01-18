@@ -1,28 +1,48 @@
 h2 {
-    color: #0ef;
+    color: #0ef ;
 }
+
 
 .container {
     background-color: black;
     color: white;
     border: #0ef;
+
 }
 
-.col-lg-5.about-me, .col-lg-6.featured-project {
+
+.col-lg.about-me {
     border: 1px solid #0ef; /* Set the border color to #0ef (blue) */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
     padding: 15px; /* Optional: Add some padding for better visual appearance */
+    margin-right: 15px;
     margin-bottom: 30px;
 }
 
-.about-me {
-    margin-right: 15px; /* Adjust the margin as needed for spacing */
-}
 
-.featured-project {
-    margin-left: 15px; /* Adjust the margin as needed for spacing */
+.col-lg.featured-project {
+    border: 1px solid #0ef; /* Set the border color to #0ef (blue) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    padding: 15px; /* Optional: Add some padding for better visual appearance */
+    margin-left: 15px;
+    
 }
 
 .text-left {
     color: yellow;
 }
+
+
+.row {
+    display: flex; /* Enables Flexbox */
+    align-items: stretch; /* Ensures all child elements have the same height */
+}
+
+.col-lg.about-me,
+.col-lg.featured-project {
+    display: flex; /* Ensures internal content is flexed properly */
+    flex-direction: column; /* Aligns content vertically inside the sections */
+    justify-content: space-between; /* Optional: Ensures spacing between content */
+    height: 100%; /* Matches the height of sibling elements */
+}
+
